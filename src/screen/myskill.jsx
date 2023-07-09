@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const MySkill = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   return (
-    <section id="skills" className="pt-10 pb-24 ">
+    <section id="skills" className="pt-10 pb-24 z-40">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
@@ -91,7 +91,7 @@ export const MySkill = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
+              <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Experience
               </p>

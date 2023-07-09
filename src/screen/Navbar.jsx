@@ -24,9 +24,9 @@ export const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const navbarBackground = isTopOfPage ? "" : "bg-red";
   return (
     <div>
-      <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-2`}>
+      <nav className={`${navbarBackground} z-40  w-full fixed top-0 py-2`}>
         <div className="flex items-center justify-between mx-auto w-5/6">
-          <h4 className="font-playfair text-4xl font-bold">Tarik</h4>
+          <h4 className="font-playfair text-3xl font-bold">T</h4>
 
           {isAboveSmallScreens ? (
             <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">

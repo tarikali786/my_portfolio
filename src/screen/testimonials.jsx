@@ -36,7 +36,7 @@ const Testimonials = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <div>
+        <div className="md:mt-[440px]">
           <p className="font-playfair font-semibold text-4xl mb-5">
             TESTIMONIALS
           </p>

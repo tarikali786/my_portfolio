@@ -30,7 +30,7 @@ export const Contact = () => {
         }}
         className="flex justify-end w-full"
       >
-        <div>
+        <div className="md:mt-[420px]">
           <p className="font-playfair font-semibold text-4xl">
             <span className="text-yellow">CONTACT ME</span> TO GET STARTED
           </p>
