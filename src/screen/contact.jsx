@@ -41,7 +41,7 @@ export const Contact = () => {
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="md:flex md:justify-between gap-16 mt-5">
+      <div className="md:flex  md:justify-between gap-16 ">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -74,7 +74,7 @@ export const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full rounded-[6px] bg-blue font-semibold placeholder-opaque-black p-3"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -90,7 +90,7 @@ export const Contact = () => {
             )}
 
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-blue rounded-[6px] font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -106,7 +106,7 @@ export const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-blue rounded-[6px] font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -126,7 +126,7 @@ export const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-4 rounded-[6px] bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
               type="submit"
             >
               SEND ME A MESSAGE

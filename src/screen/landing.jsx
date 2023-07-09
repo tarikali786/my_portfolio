@@ -15,21 +15,18 @@ export const Landing = ({ setSelectedPage }) => {
         {/* IMAGE SECTION */}
         <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
           {isAboveMediumScreen ? (
-            <div
-              className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
-            >
+            <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 rounded-t-[20px] before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]">
               <img
                 alt="profile"
-                className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-                src="assets/profile-image.png"
+                className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full h-[500px] md:max-w-[600px]  border-2 border-blue-500"
+                src="assets/tarik3.jpeg"
               />
             </div>
           ) : (
             <img
               alt="profile"
-              className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="assets/profile-image.png"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-[250px]   h-[250px] rounded-full md:max-w-[600px]  border-2 border-blue-500"
+              src="assets/tarik3.jpeg"
             />
           )}
         </div>

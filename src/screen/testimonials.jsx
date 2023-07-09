@@ -5,8 +5,8 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="pt-32 pb-16">
       {/* HEADING */}
-      <motion.div
-        className="md:w-1/3 text-center md:text-left"
+      {/* <motion.div
+        className="md:w-1/3  text-center md:text-left"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -16,14 +16,36 @@ const Testimonials = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">
+        <p className="font-playfair  font-semibold text-4xl mb-5 text-red">
           TESTIMONIALS
         </p>
-        <LineGradient width="mx-auto w-2/5" />
+        <LineGradient width="mx-auto w-/5" />
         <p className="mt-10">
           Here's What People are Saying About My Work. Aliquam aliquet integer
           ut fames odio in at. At magna ornare dictum lectus.
         </p>
+      </motion.div> */}
+      <motion.div
+        className="md:w-2/4 mx-auto text-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
+        <div>
+          <p className="font-playfair font-semibold text-4xl mb-5">
+            TESTIMONIALS
+          </p>
+          <div className="flex justify-center mt-5">
+            <LineGradient width="w-1/3" />
+          </div>
+        </div>
+
+        <p className="mt-10 mb-10"></p>
       </motion.div>
 
       {/* TESTIMONIALS */}
@@ -42,7 +64,7 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea.
+            Sooner or later, those who win are those who think they can.
           </p>
         </motion.div>
 
@@ -60,8 +82,7 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-            lectus.
+            Sometimes we may learn from a persons errors than from his virtues.
           </p>
         </motion.div>
 
@@ -79,7 +100,7 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Fames odio in at. At magna ornare dictum lectus.
+            Accepting reponsibility is accespting chanllenge.
           </p>
         </motion.div>
       </div>

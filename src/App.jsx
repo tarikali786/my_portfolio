@@ -31,9 +31,9 @@ export const App = () => {
     }, 2000);
   }, []);
 
-  if (isLoading) {
-    return <div className="">Loading...</div>; // Render the loading page
-  }
+  // if (isLoading) {
+  //   return <div className="">Loading...</div>; // Render the loading page
+  // }
 
   return (
     <>
@@ -57,15 +57,15 @@ export const App = () => {
         <div className="w-5/6 mx-auto md:h-full ">
           <MySkill />
         </div>
-        <LineGradient />
+        {/* <LineGradient /> */}
         <div className="w-5/6 mx-auto md:h-full ">
           <Project />
         </div>
-        <LineGradient />
+        {/* <LineGradient /> */}
         <div className="w-5/6 mx-auto md:h-full ">
           <Testimonials />
         </div>
-        <LineGradient />
+        {/* <LineGradient /> */}
         <div className="w-5/6 mx-auto md:h-full ">
           <Contact />
         </div>

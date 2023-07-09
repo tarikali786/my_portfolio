@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const MySkill = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <section id="skills" className="pt-10 pb-24 ">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
@@ -23,8 +23,8 @@ export const MySkill = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
+            Web Developer with Expertise in Python, Django, HTML/CSS, React,
+            Git, AWS, and Django Rest Framework
           </p>
         </motion.div>
 
@@ -48,7 +48,7 @@ export const MySkill = () => {
       {/* SKILLS */}
       <div className="md:flex md:justify-between mt-16 gap-32">
         {/* EXPERIENCE */}
-        <motion.div
+        {/* <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
@@ -66,12 +66,46 @@ export const MySkill = () => {
                 Experience
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[10]" />
           </div>
           <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+            Experienced Full Stack Web Developer proficient in Python Django and
+            React. Demonstrated expertise in backend development with 8 months
+            of experience, building and maintaining web applications using
+            Python Django. Also skilled in frontend development with React,
+            creating interactive and responsive user interfaces. Strong
+            collaboration and problem-solving abilities in cross-functional
+            teams.
+          </p>
+        </motion.div> */}
+        <motion.div
+          className="md:w-1/3 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className="relative h-32">
+            <div className="z-10">
+              <p className="font-playfair font-semibold text-5xl">02</p>
+              <p className="font-playfair font-semibold text-3xl mt-3">
+                Experience
+              </p>
+            </div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+          </div>
+          <p className="mt-5">
+            Experienced Full Stack Web Developer proficient in Python Django and
+            React. Demonstrated expertise in backend development with 8 months
+            of experience, building and maintaining web applications using
+            Python Django. Also skilled in frontend development with React,
+            creating interactive and responsive user interfaces. Strong
+            collaboration and problem-solving abilities in cross-functional
+            teams.
           </p>
         </motion.div>
 
@@ -97,10 +131,8 @@ export const MySkill = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+            Web Development Trailblazer: Igniting Digital Possibilities with
+            Fresh Perspectives and Cutting-Edge Skills
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -125,10 +157,8 @@ export const MySkill = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+            Web Development Visionary: Weaving Imaginative Experiences with
+            Unconventional Thinking and Technological Wizardry
           </p>
         </motion.div>
       </div>
