@@ -17,7 +17,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact pt-24 pb-24">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -74,7 +74,7 @@ export const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full rounded-[6px] bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full rounded-lg bg-blue/20 backdrop-blur-sm border-2 border-blue/30 font-semibold placeholder-opaque-black p-3 focus:bg-blue/30 focus:border-blue transition-all duration-300"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -90,8 +90,8 @@ export const Contact = () => {
             )}
 
             <input
-              className="w-full bg-blue rounded-[6px] font-semibold placeholder-opaque-black p-3 mt-5"
-              type="text"
+              className="w-full bg-blue/20 backdrop-blur-sm border-2 border-blue/30 rounded-lg font-semibold placeholder-opaque-black p-3 mt-5 focus:bg-blue/30 focus:border-blue transition-all duration-300"
+              type="email"
               placeholder="EMAIL"
               {...register("email", {
                 required: true,
@@ -106,7 +106,7 @@ export const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-blue rounded-[6px] font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-blue/20 backdrop-blur-sm border-2 border-blue/30 rounded-lg font-semibold placeholder-opaque-black p-3 mt-5 focus:bg-blue/30 focus:border-blue transition-all duration-300 resize-none"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -126,7 +126,7 @@ export const Contact = () => {
             )}
 
             <button
-              className="p-4 rounded-[6px] bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-4 rounded-lg bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-yellow/50 btn-primary"
               type="submit"
             >
               SEND ME A MESSAGE

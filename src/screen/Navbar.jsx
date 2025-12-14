@@ -21,17 +21,17 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 export const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width:768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-red";
+  const navbarBackground = isTopOfPage ? "" : "bg-red navbar-blur";
   return (
     <div>
-      <nav className={`${navbarBackground} z-40  w-full fixed top-0 py-2`}>
+      <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-3 transition-all duration-300 shadow-lg`}>
         <div className="flex items-center justify-between mx-auto w-5/6">
           <h4 className="font-playfair text-3xl font-bold">
             T<span className="text-xl">arik </span>
           </h4>
 
           {isAboveSmallScreens ? (
-            <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
+            <div className="flex justify-between gap-12 font-opensans text-sm font-semibold">
               <Link
                 page="Home"
                 selectedPage={selectedPage}
@@ -43,12 +43,22 @@ export const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
               <Link
+                page="Experience"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
                 page="Projects"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Testimonials"
+                page="Education"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Achievements"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
@@ -90,12 +100,22 @@ export const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                   setSelectedPage={setSelectedPage}
                 />
                 <Link
+                  page="Experience"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
                   page="Projects"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                 />
                 <Link
-                  page="Testimonials"
+                  page="Education"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Achievements"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                 />

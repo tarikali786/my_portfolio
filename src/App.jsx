@@ -9,6 +9,10 @@ import { Project } from "./screen/project";
 import { Contact } from "./screen/contact";
 import { Testimonials } from "./screen/testimonials";
 import { Footer } from "./screen/footer";
+import { Experience } from "./screen/experience";
+import { Education } from "./screen/education";
+import { Achievements } from "./screen/achievements";
+import "./App.css";
 export const App = () => {
   const [selectedPage, setSelectedPage] = useState("home");
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
@@ -44,7 +48,7 @@ export const App = () => {
           setSelectedPage={setSelectedPage}
         />
 
-        <div className="w-5/6 mx-auto md:h-full ">
+        <div className="w-5/6 mx-auto">
           {isAboveMediumScreens && (
             <DotGroup
               selectedPage={selectedPage}
@@ -54,19 +58,27 @@ export const App = () => {
           <Landing setSelectedPage={selectedPage} />
         </div>
         <LineGradient />
-        <div className="w-5/6 mx-auto md:h-full ">
+        <div className="w-5/6 mx-auto">
           <MySkill />
         </div>
-        {/* <LineGradient /> */}
-        <div className="w-5/6 mx-auto md:h-full ">
+        <LineGradient />
+        <div className="w-5/6 mx-auto">
+          <Experience />
+        </div>
+        <LineGradient />
+        <div className="w-5/6 mx-auto">
           <Project />
         </div>
-        {/* <LineGradient /> */}
-        <div className="w-5/6 mx-auto md:h-full ">
-          <Testimonials />
+        <LineGradient />
+        <div className="w-5/6 mx-auto">
+          <Education />
         </div>
-        {/* <LineGradient /> */}
-        <div className="w-5/6 mx-auto md:h-full ">
+        <LineGradient />
+        <div className="w-5/6 mx-auto">
+          <Achievements />
+        </div>
+        <LineGradient />
+        <div className="w-5/6 mx-auto">
           <Contact />
         </div>
         <Footer />

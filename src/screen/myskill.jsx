@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 export const MySkill = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   return (
-    <section id="skills" className="pt-10 pb-24 z-40">
+    <section id="skills" className="pt-24 pb-24 z-40">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-32">
+      <div className="md:flex md:justify-between md:gap-16 mt-10">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -23,8 +23,8 @@ export const MySkill = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Web Developer with Expertise in Python, Django, HTML/CSS, React,
-            Git, AWS, and Django Rest Framework
+            Web Developer with 3 years of experience. Expertise in React.js, Python, Django, TypeScript, 
+            Node.js, HTML, CSS, JavaScript, Material UI, Ant Design, Tailwind, Redux, and REST API.
           </p>
         </motion.div>
 
@@ -46,7 +46,7 @@ export const MySkill = () => {
         </div>
       </div>
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
+      <div className="md:flex md:justify-between mt-16 gap-8 md:gap-16">
         {/* EXPERIENCE */}
         {/* <motion.div
           className="md:w-1/3 mt-10"
@@ -69,13 +69,10 @@ export const MySkill = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[10]" />
           </div>
           <p className="mt-5">
-            Experienced Full Stack Web Developer proficient in Python Django and
-            React. Demonstrated expertise in backend development with 8 months
-            of experience, building and maintaining web applications using
-            Python Django. Also skilled in frontend development with React,
-            creating interactive and responsive user interfaces. Strong
-            collaboration and problem-solving abilities in cross-functional
-            teams.
+            Experienced Full Stack Web Developer with 3 years of professional experience. 
+            Proficient in Python Django and React, building scalable web applications. 
+            Strong expertise in both backend and frontend development, creating interactive 
+            and responsive user interfaces. Excellent collaboration and problem-solving abilities.
           </p>
         </motion.div> */}
         <motion.div
@@ -89,8 +86,8 @@ export const MySkill = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
-            <div className="z-10">
+          <div className="relative h-32 mb-5">
+            <div className="z-10 relative">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Experience
@@ -99,13 +96,10 @@ export const MySkill = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Experienced Full Stack Web Developer proficient in Python Django and
-            React. Demonstrated expertise in backend development with 8 months
-            of experience, building and maintaining web applications using
-            Python Django. Also skilled in frontend development with React,
-            creating interactive and responsive user interfaces. Strong
-            collaboration and problem-solving abilities in cross-functional
-            teams.
+            Experienced Full Stack Web Developer with 3 years of professional experience. 
+            Proficient in Python Django and React, building scalable web applications. 
+            Strong expertise in both backend and frontend development, creating interactive 
+            and responsive user interfaces. Excellent collaboration and problem-solving abilities.
           </p>
         </motion.div>
 
@@ -121,8 +115,8 @@ export const MySkill = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
-            <div className="z-10">
+          <div className="relative h-32 mb-5">
+            <div className="z-10 relative">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Innovative
@@ -147,8 +141,8 @@ export const MySkill = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
-            <div className="z-10">
+          <div className="relative h-32 mb-5">
+            <div className="z-10 relative">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Imaginative
@@ -162,6 +156,46 @@ export const MySkill = () => {
           </p>
         </motion.div>
       </div>
+
+      {/* SKILLS GRID */}
+      <motion.div
+        className="mt-20"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
+        <h3 className="font-playfair font-semibold text-2xl mb-8 text-center">
+          Technical <span className="text-yellow">Skills</span>
+        </h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+          {[
+            "HTML", "CSS", "JavaScript", "React.js",
+            "Python", "Django", "Material UI", "Ant Design", "Tailwind", "Redux",
+        
+          ].map((skill, index) => (
+            <motion.div
+              key={skill}
+              className="bg-blue/10 backdrop-blur-sm border-2 border-blue/30 rounded-lg p-4 text-center hover:border-yellow hover:bg-yellow/20 hover:shadow-lg hover:shadow-yellow/30 transition-all duration-300 cursor-default card-hover"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.05, duration: 0.3 }}
+              variants={{
+                hidden: { opacity: 0, scale: 0.8 },
+                visible: { opacity: 1, scale: 1 },
+              }}
+              whileHover={{ scale: 1.08, y: -5 }}
+            >
+              <p className="font-semibold text-sm">{skill}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
     </section>
   );
 };

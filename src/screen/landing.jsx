@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 // import { SocialMediaIcons } from "../Component/SocialMediaIcons";
 import { SocialMediaIcons } from "../component/SocialMediaIcons";
-import { Component } from "react";
 export const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreen = useMediaQuery("(min-width:1060px)");
   return (
@@ -55,19 +54,25 @@ export const Landing = ({ setSelectedPage }) => {
             </p>
 
             <p className="mt-10 mb-7 text-lg text-center md:text-start">
-              I am a passionate web developer with 8 months of experience in
-              Python and React. My technical skills include proficiency in
-              Django, HTML5, CSS, AWS, GIT, MongoDB, and MySQL. I have a strong
-              understanding of web development principles and a proven track
-              record of delivering high-quality projects on time. I am seeking
-              new opportunities to further develop my skills and contribute to
-              the success of a dynamic team..
+              I'm a passionate Web Developer with 3 years of experience in modern web technologies. 
+              I specialize in building dynamic, responsive applications using React, Python, and Django. 
+              My expertise spans across multiple domains, and I love exploring new technologies and 
+              innovative solutions. I'm dedicated to creating high-quality, performant web applications 
+              that deliver exceptional user experiences.
             </p>
+            <div className="flex flex-col items-center md:items-start">
+              <div className="mt-5 flex flex-wrap gap-3 justify-center md:justify-start">
+                <span className="px-4 py-2 bg-blue/20 rounded-full text-sm font-semibold">React.js</span>
+                <span className="px-4 py-2 bg-red/20 rounded-full text-sm font-semibold">Python</span>
+                <span className="px-4 py-2 bg-yellow/20 rounded-full text-sm font-semibold">Django</span>
+                <span className="px-4 py-2 bg-blue/20 rounded-full text-sm font-semibold">TypeScript</span>
+              </div>
+            </div>
           </motion.div>
 
           {/* CALL TO ACTIONS */}
           <motion.div
-            className="flex mt-5 justify-center md:justify-start"
+            className="flex flex-col items-center md:items-start"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -77,23 +82,25 @@ export const Landing = ({ setSelectedPage }) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <AnchorLink
-              className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-500"
-              onClick={() => setSelectedPage("contact")}
-              href="#contact"
-            >
-              Contact Me
-            </AnchorLink>
-            <AnchorLink
-              className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-              onClick={() => setSelectedPage("contact")}
-              href="#contact"
-            >
-              <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
-                Let's talk.
-              </div>
-            </AnchorLink>
+            <div className="flex mt-5 justify-center md:justify-start">
+              <AnchorLink
+                className="bg-gradient-rainblue text-deep-blue rounded-lg py-3 px-7 font-semibold
+                hover:bg-blue hover:text-white transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-blue/50 btn-primary"
+                onClick={() => setSelectedPage("contact")}
+                href="#contact"
+              >
+                Contact Me
+              </AnchorLink>
+              <AnchorLink
+                className="rounded-r-lg bg-gradient-rainblue py-0.5 pr-0.5 hover:scale-105 transition-all duration-500"
+                onClick={() => setSelectedPage("contact")}
+                href="#contact"
+              >
+                <div className="bg-deep-blue hover:text-red transition-all duration-500 w-full h-full flex items-center justify-center px-10 font-playfair rounded-r-lg hover:bg-opacity-90">
+                  Let's talk.
+                </div>
+              </AnchorLink>
+            </div>
           </motion.div>
 
           <motion.div
