@@ -23,8 +23,9 @@ export const MySkill = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Web Developer with 3 years of experience. Expertise in React.js, Python, Django, TypeScript, 
-            Node.js, HTML, CSS, JavaScript, Material UI, Ant Design, Tailwind, Redux, and REST API.
+            Frontend Developer with 2+ years of experience. Expertise in React.js, TypeScript, 
+            HTML, CSS, JavaScript, Material UI, Ant Design, Tailwind, Redux, and REST API. 
+            Basic knowledge of Django for backend integration.
           </p>
         </motion.div>
 
@@ -96,10 +97,11 @@ export const MySkill = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Experienced Full Stack Web Developer with 3 years of professional experience. 
-            Proficient in Python Django and React, building scalable web applications. 
-            Strong expertise in both backend and frontend development, creating interactive 
-            and responsive user interfaces. Excellent collaboration and problem-solving abilities.
+            Frontend Developer with 2+ years of professional experience. 
+            Specialized in React.js and modern frontend technologies, building interactive 
+            and responsive user interfaces. Proficient in creating scalable web applications 
+            with a focus on user experience. Basic knowledge of Django for backend integration. 
+            Excellent collaboration and problem-solving abilities.
           </p>
         </motion.div>
 

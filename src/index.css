@@ -14,49 +14,61 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #2CBCE9 0%, #DC4492 50%, #FDCC49 100%);
+  background: linear-gradient(180deg, #2cbce9 0%, #dc4492 50%, #fdcc49 100%);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #24CBFF 0%, #FC59FF 50%, #FFBD0C 100%);
+  background: linear-gradient(180deg, #24cbff 0%, #fc59ff 50%, #ffbd0c 100%);
 }
 
 /* Firefox Scrollbar */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #DC4492 #010026;
+  scrollbar-color: #dc4492 #010026;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-html,
-body,
-#root,
-.app {
-  height: 100%;
+html {
+  background-color: #010026;
+}
+
+body {
   background-color: #010026;
   @apply text-white;
   overflow-x: hidden;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #010026;
 }
 
 /* Smooth transitions for all interactive elements */
 * {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
 /* Enhanced text selection */
 ::selection {
-  background-color: #DC4492;
+  background-color: #dc4492;
   color: white;
 }
 
 ::-moz-selection {
-  background-color: #DC4492;
+  background-color: #dc4492;
   color: white;
 }
 
@@ -106,7 +118,8 @@ body,
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(44, 188, 233, 0.3);
   }
   50% {
@@ -136,7 +149,7 @@ body,
 
 /* Enhanced gradient text */
 .gradient-text {
-  background: linear-gradient(90deg, #2CBCE9 0%, #DC4492 50%, #FDCC49 100%);
+  background: linear-gradient(90deg, #2cbce9 0%, #dc4492 50%, #fdcc49 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -180,7 +193,7 @@ img {
 
 /* Focus styles for accessibility */
 *:focus-visible {
-  outline: 2px solid #FDCC49;
+  outline: 2px solid #fdcc49;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -201,7 +214,7 @@ img {
 
 /* Text gradient animation */
 .text-gradient-animate {
-  background: linear-gradient(90deg, #2CBCE9, #DC4492, #FDCC49, #2CBCE9);
+  background: linear-gradient(90deg, #2cbce9, #dc4492, #fdcc49, #2cbce9);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

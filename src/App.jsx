@@ -42,20 +42,20 @@ export const App = () => {
   return (
     <>
       <div className="app bg-deep-blue ">
-        <Navbar
+        {/* <Navbar
           isTopOfPage={isTopOfPage}
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
-        />
+        /> */}
 
         <div className="w-5/6 mx-auto">
-          {isAboveMediumScreens && (
+          {/* {isAboveMediumScreens && (
             <DotGroup
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-          )}
-          <Landing setSelectedPage={selectedPage} />
+          )} */}
+          <Landing setSelectedPage={setSelectedPage} />
         </div>
         <LineGradient />
         <div className="w-5/6 mx-auto">

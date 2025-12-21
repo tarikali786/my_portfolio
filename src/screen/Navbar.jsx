@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 // import { Link } from "react-router-dom";
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
+const Link = ({ page, selectedPage, setSelectedPage, onLinkClick }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
@@ -11,7 +11,16 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
         selectedPage === lowerCasePage ? "text-yellow" : ""
       } hover:text-yellow transition duration-500`}
       href={`#${lowerCasePage}`}
-      onClick={() => setSelectedPage(lowerCasePage)}
+      offset={80}
+      onClick={() => {
+        // Update state after a small delay to allow scroll to start
+        setTimeout(() => {
+          setSelectedPage(lowerCasePage);
+          if (onLinkClick) {
+            onLinkClick();
+          }
+        }, 100);
+      }}
     >
       {page}
     </AnchorLink>
@@ -93,36 +102,43 @@ export const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                   page="Home"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
+                  onLinkClick={() => setIsMenuToggled(false)}
                 />
                 <Link
                   page="Skills"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
+                  onLinkClick={() => setIsMenuToggled(false)}
                 />
                 <Link
                   page="Experience"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
+                  onLinkClick={() => setIsMenuToggled(false)}
                 />
                 <Link
                   page="Projects"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
+                  onLinkClick={() => setIsMenuToggled(false)}
                 />
                 <Link
                   page="Education"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
+                  onLinkClick={() => setIsMenuToggled(false)}
                 />
                 <Link
                   page="Achievements"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
+                  onLinkClick={() => setIsMenuToggled(false)}
                 />
                 <Link
                   page="Contact"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
+                  onLinkClick={() => setIsMenuToggled(false)}
                 />
               </div>
             </div>

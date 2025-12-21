@@ -11,7 +11,8 @@ export const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "home" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("home")}
+        offset={80}
+        onClick={() => setTimeout(() => setSelectedPage("home"), 100)}
         title="home"
       />
 
@@ -20,8 +21,9 @@ export const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "skills" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
+        offset={80}
         title="skills"
-        onClick={() => setSelectedPage("skills")}
+        onClick={() => setTimeout(() => setSelectedPage("skills"), 100)}
       />
 
       <AnchorLink
@@ -29,8 +31,9 @@ export const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "experience" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
+        offset={80}
         title="experience"
-        onClick={() => setSelectedPage("experience")}
+        onClick={() => setTimeout(() => setSelectedPage("experience"), 100)}
       />
 
       <AnchorLink
@@ -38,8 +41,9 @@ export const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "projects" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
+        offset={80}
         title="projects"
-        onClick={() => setSelectedPage("projects")}
+        onClick={() => setTimeout(() => setSelectedPage("projects"), 100)}
       />
 
       <AnchorLink
@@ -47,8 +51,9 @@ export const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "education" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
+        offset={80}
         title="education"
-        onClick={() => setSelectedPage("education")}
+        onClick={() => setTimeout(() => setSelectedPage("education"), 100)}
       />
 
       <AnchorLink
@@ -56,8 +61,9 @@ export const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "achievements" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
+        offset={80}
         title="achievements"
-        onClick={() => setSelectedPage("achievements")}
+        onClick={() => setTimeout(() => setSelectedPage("achievements"), 100)}
       />
 
       <AnchorLink
@@ -65,8 +71,9 @@ export const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "contact" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
+        offset={80}
         title="contact"
-        onClick={() => setSelectedPage("contact")}
+        onClick={() => setTimeout(() => setSelectedPage("contact"), 100)}
       />
     </div>
   );

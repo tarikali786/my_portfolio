@@ -54,11 +54,7 @@ export const Landing = ({ setSelectedPage }) => {
             </p>
 
             <p className="mt-10 mb-7 text-lg text-center md:text-start">
-              I'm a passionate Web Developer with 3 years of experience in modern web technologies. 
-              I specialize in building dynamic, responsive applications using React, Python, and Django. 
-              My expertise spans across multiple domains, and I love exploring new technologies and 
-              innovative solutions. I'm dedicated to creating high-quality, performant web applications 
-              that deliver exceptional user experiences.
+            Frontend Developer with 2+ years of experience. Expertise in React.js, TypeScript, HTML, CSS, JavaScript, Material UI, Ant Design, Tailwind, Redux, and REST API. Basic knowledge of Django & Nodejs for backend integration.
             </p>
             <div className="flex flex-col items-center md:items-start">
               <div className="mt-5 flex flex-wrap gap-3 justify-center md:justify-start">
@@ -86,15 +82,17 @@ export const Landing = ({ setSelectedPage }) => {
               <AnchorLink
                 className="bg-gradient-rainblue text-deep-blue rounded-lg py-3 px-7 font-semibold
                 hover:bg-blue hover:text-white transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-blue/50 btn-primary"
-                onClick={() => setSelectedPage("contact")}
+                onClick={() => setTimeout(() => setSelectedPage("contact"), 100)}
                 href="#contact"
+                offset={80}
               >
                 Contact Me
               </AnchorLink>
               <AnchorLink
                 className="rounded-r-lg bg-gradient-rainblue py-0.5 pr-0.5 hover:scale-105 transition-all duration-500"
-                onClick={() => setSelectedPage("contact")}
+                onClick={() => setTimeout(() => setSelectedPage("contact"), 100)}
                 href="#contact"
+                offset={80}
               >
                 <div className="bg-deep-blue hover:text-red transition-all duration-500 w-full h-full flex items-center justify-center px-10 font-playfair rounded-r-lg hover:bg-opacity-90">
                   Let's talk.
