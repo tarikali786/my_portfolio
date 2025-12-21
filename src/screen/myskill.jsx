@@ -22,11 +22,7 @@ export const MySkill = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-            Frontend Developer with 2+ years of experience. Expertise in React.js, TypeScript, 
-            HTML, CSS, JavaScript, Material UI, Ant Design, Tailwind, Redux, and REST API. 
-            Basic knowledge of Django for backend integration.
-          </p>
+     
         </motion.div>
 
         <div className="mt-16 md:mt-0">
@@ -127,8 +123,9 @@ export const MySkill = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Web Development Trailblazer: Igniting Digital Possibilities with
-            Fresh Perspectives and Cutting-Edge Skills
+            Transforming complex requirements into elegant, performant solutions. 
+            Leveraging React.js, TypeScript, and modern frameworks to deliver 
+            pixel-perfect UIs that enhance user engagement and drive business results.
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -153,8 +150,9 @@ export const MySkill = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Web Development Visionary: Weaving Imaginative Experiences with
-            Unconventional Thinking and Technological Wizardry
+            Crafting intuitive user experiences through clean code and creative problem-solving. 
+            Passionate about writing maintainable, scalable applications that exceed client 
+            expectations and deliver measurable impact.
           </p>
         </motion.div>
       </div>
@@ -176,7 +174,7 @@ export const MySkill = () => {
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
           {[
-            "HTML", "CSS", "JavaScript", "React.js",
+            "HTML", "CSS", "JavaScript", "React.js", "TypeScript",
             "Python", "Django", "Material UI", "Ant Design", "Tailwind", "Redux",
         
           ].map((skill, index) => (
