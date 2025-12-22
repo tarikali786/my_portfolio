@@ -82,6 +82,14 @@ export const Project = () => {
           imageName="stayindigital"
           link="https://stayindigital.netlify.app/"
         />
+
+        <ProjectChild
+          title="taxbharo"
+          headingtitle="TaxBharo - Tax & Legal Services Platform"
+          context="A comprehensive tax, accounting, and legal services platform providing solutions for Income Tax, GST, Company/LLP registration, Accounting & Payroll, Legal Services, and License & Registration. Features include real-time stock market data, tax calendar, latest insights, and educational content. Technologies: React, Modern Web Technologies."
+          imageName="taxbharo"
+          link="https://taxbharo.in/"
+        />
       </motion.div>
     </section>
   );
